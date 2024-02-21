@@ -1,42 +1,40 @@
-Feature: Login scenarios of the SalesForce application
+Feature: Login scenarios of the DSALGO Application
 
-  Scenario: Login into SaleForce application without password
-    Given User is on the "LoginPage"
-    When User enter into Textbox "Username" "march@solutions.com"
-    And User enter into Textbox "Password" ""
-    And User clicks on element "Login"
-    Then Assert: Message should be displayed "ErrorMessage" "Please enter your password."
+  Scenario: Login into DSALGO Application without password
+    Given User opens homepage
+    When User clicks on "Sign In" button on right side
+    Then User should land on page with "UserName and Password" boxes
+    When User clicks on "Login" button
+    Then Assert: It should display an error "Please fill out this field" below Username textbox
+    And User enters Userrname and clicks "Login" button
+    Then Assert:It should display an error "Please fill out this field" below Password textbox
+    
 
-  Scenario: Login into SaleForce application with valid username and password
-    Given User is on the "LoginPage"
-    When User enter into Textbox "Username" "march@solutions.com"
-    And User enter into Textbox "Password" "Training123"
-    And User clicks on element "Login"
-    Given User is on the "HomePage"
+  Scenario: Login into DSALGO Application with valid username and password
+    Given User opens "Login" page
+    When User enters into Textbox "Username" "Numpyninja"
+    And User enters into Textbox "Password" "Codecrafters@123"
+    And User clicks on "Login" button
+    Then User should land on page with message "You are logged in" and with the user name on the top.
+    
 
-  Scenario: Login into SaleForce application by checking RememberMe checkbox
-    Given User is on the "LoginPage"
-    When User enter into Textbox "Username" "march@solutions.com"
-    And User enter into Textbox "Password" "Training123"
-    And User clicks on element "Checkbox"
-    And User clicks on element "Login"
-    Given User is on the "UserMenuPage"
-    When User clicks on element "Usermenu"
-    And User clicks on element "Logout"
-    Given User is on the "LoginPage"
-    Then Assert "Username" with name displayed "march@solutions.com"
+  Scenario: Login into DSALGO Application with invalid username and password
+    Given User opens "Login" page
+    When User enters invalid Username and Password
+    And User clicks on "Login" button
+    Then It should display an error "Invalid Username and Password"
+    And User enters valid Username and invalid Password
+    And User clicks on "Login" button
+    Then It should display an error "Invalid Username and Password"
+    When User enters invalid Username and valid Password
+    And User clicks on "Login" button
+    Then It should display an error "Invalid Username and Password"
+  
+  Scenario: Signout from DSALGO Application
+    Given User should land on page with message "You are logged in" and with the user name on the top.
+    When User clicks on "Signout" button
+    Then User should be redirected to the page with messgae "You are loggedout successfully"
+    
+   
 
-  Scenario: Test the Forgot Password caseA
-    Given User is on the "LoginPage"
-    When User clicks on element "ForgotPassword"
-    Given User is on the "ForgotPasswordPage"
-    When User enter into Textbox "ForgotPasswordUsername" "sherinsoman@gmail.com"
-    And User clicks on element "ContinueButton"
-    Then Assert: Message should be displayed "CheckYourEmailMessage" "Check Your Email"
-
-  Scenario: Test the Forgot Password caseB
-    Given User is on the "LoginPage"
-    When User enter into Textbox "Username" "123"
-    And User enter into Textbox "Password" "22131"
-    And User clicks on element "Login"
-    Then Assert: Message should be displayed "ErrorMessage" "Please check your username and password. If you still can't log in, contact your Salesforce administrator."
+  

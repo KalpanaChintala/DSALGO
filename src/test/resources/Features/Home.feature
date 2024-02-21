@@ -1,15 +1,19 @@
 Feature: Homepage features of the DSAlgoApplication
 
-  Scenario: Select  drop down menu for Data Structures
-    Given User is on the "GetStartedPage"
-    Then Assert: Message should be displayed "Message" "You are at the right place"
-    When User clicks on element "GetStartedButton"
-    Given User is on the "HomePage"
-    When User clicks on element "DatastructuresDropdown"
-    Then Assert link in "DataStructureNavMenuItems" 
-      | Arrays      |
-      | Linked List |
-      | Stack       |
-      | Queue       |
-      | Tree        |
-      | Graph       |
+  Scenario: Validating Homepage
+    Given User launches chrome browser
+    When User opens DS-Algo Portal Link " https://dsportalapp.herokuapp.com/"
+    Then User should see the page with "Get Started" button.
+    
+    Given User launches chrome browser
+    When User clicks on "Get Started" button
+    Then User should land on page with 6 panes with different data structures
+    
+    Given User opens homepage
+    When User clicks "Data Structures" drop down
+    Then I shouls see 6 different data structure entries in that dropdown
+    
+    Given User opens homepage
+    When User selects any datastructure from dropdown
+    Then It should alert the user with a message "You are not logged in"
+    
