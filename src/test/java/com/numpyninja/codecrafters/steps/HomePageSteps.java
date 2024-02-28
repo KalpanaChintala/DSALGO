@@ -12,44 +12,29 @@ public class HomePageSteps {
 	
 	private SignInPage signInPage = new SignInPage(DriverFactory.getDriver());
 	private HomePage homePage;
-
 	
-	@Given("User is on the HomePage")
+	@Given("User is on the Home page")
 	public void user_is_on_the_home_page() {
 		DriverFactory.getDriver().get("https://dsportalapp.herokuapp.com/home");
 	}
-	
-	@Given("User is on the HomePage after successful signin")
-	public void user_is_on_the_home_page_after_successful_signin() {
-		//List<Map<String, String>> credList = credTable.asMaps();
-		//String userName = credList.get(0).get("username");
-		//String password = credList.get(0).get("password");
-		String userName = "NumpyNinja";
-		String password = "NumpyNinja";
-		DriverFactory.getDriver()
-				.get("https://dsportalapp.herokuapp.com/login");
-		//homePage = signInPage.doLogin(userName, password);
-	}
 
-	@When("User clicks on element DatastructuresDropdown")
-	public void user_clicks_on_element_datastructures_dropdown() {
-		
-		
+	@When("User clicks on Get Started button on homepage {string} without login")
+	public void user_clicks_on_get_started_button_on_homepage_without_login(String string) {
 	    
-	}
-
-	@Then("Verify all the links in DataStructureNavMenuItems\"")
-	public void verify_all_the_links_in_data_structure_nav_menu_items(io.cucumber.datatable.DataTable dataTable) {
-	   
-		
+		  homePage.getStartedForModule(string);
 		
 	}
 
-	@Then("Dropdown section count should be {int}")
-	public void dropdown_section_count_should_be(Integer int1) {
-	   
-		
-		
+	@Then("User gets warning message {string}")
+	public void user_gets_warning_message(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("User clicks on DatastructuresDropdown {string}")
+	public void user_clicks_on_datastructures_dropdown(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
 	}
 
 	@Then("Sign in link should be displayed")
@@ -64,21 +49,30 @@ public class HomePageSteps {
 	    throw new io.cucumber.java.PendingException();
 	}
 
-	@When("User clicks on link Arrays")
-	public void user_clicks_on_link_arrays() {
-	  
-	}
-
-	@Then("You are not logged in message should be displayed")
-	public void you_are_not_logged_in_message_should_be_displayed() {
+	@When("User click on signin link")
+	public void user_click_on_signin_link() {
 	    // Write code here that turns the phrase above into concrete actions
 	    throw new io.cucumber.java.PendingException();
 	}
 
-	@When("User clicks on Data Structures-Introduction GetStartedButton")
-	public void user_clicks_on_data_structures_introduction_get_started_button() {
+	@Then("User lands on Signin page with title {string}")
+	public void user_lands_on_signin_page_with_title(String string) {
 	    // Write code here that turns the phrase above into concrete actions
 	    throw new io.cucumber.java.PendingException();
 	}
 
+	@When("User click on register link")
+	public void user_click_on_register_link() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("User lands on Register page with title {string}")
+	public void user_lands_on_register_page_with_title(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+
+	
 }
