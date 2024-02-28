@@ -22,20 +22,6 @@ public class QueuePageSteps {
 	private EditorPage editorPage;
 
 	
-	@Given("user has already logged in to application")
-	public void user_has_already_logged_in_to_application() {
-		
-		//List<Map<String, String>> credList = credTable.asMaps();
-		
-		//String username = credList.get(0).get("username");
-		//String password = credList.get(0).get("password");
-		String username = "Numpyninja";
-		String password = "Codecrafters@123";
-		DriverFactory.getDriver()
-				.get("https://dsportalapp.herokuapp.com/login");
-		homePage = signInPage.doLogin(username, password);
-		
-	}
 	
 	@Given("User is on the queue page")
 	public void user_is_on_the_queue_page_with_title() {
@@ -48,27 +34,21 @@ public class QueuePageSteps {
 		queuePage.clickOnImplementationOfQueueLink();
 	}
 
-	@Then("User lands on page with title  {string}")
-	public void user_lands_on_landing_page_with_title(String string) {
-		String title=queuePage.getPageTitle();
-		System.out.println(title);
-		Assert.assertTrue(title.equals(string));
+	@Then("User lands on Queue page with title  {string}")
+	public void user_lands_on_queue_page_with_title(String expectedTitle) {
+		String actualTitle=queuePage.getPageTitle();
+	
+		Assert.assertTrue(actualTitle.equals(expectedTitle));
 	}
 
-	@When("User clicks on Try Here Button")
-	public void user_clicks_on_try_here_button() {
+	@When("User clicks on Queue page Try Here Button")
+	public void user_clicks_on_queue_page_try_here_button() {
 		
 		editorPage = queuePage.navigateToEditorPage();
 	
 	}
 
-	@Then("User lands on the Editor page with title {string}")
-	public void user_lands_on_the_editor_page_with_title(String string) {
-		String title=editorPage.getPageTitle();
-		System.out.println(title);
-		Assert.assertTrue(title.equals("Assessment"));
-		
-	}
+	
 
 	@When("User clicks on link Implementation using collections.deque")
 	public void user_clicks_on_link_implementation_using_collections_deque() {
@@ -91,6 +71,13 @@ public class QueuePageSteps {
 	public void user_clicks_on_link_queue_operations() {
 	   
 		queuePage.clickOnqueueOperationsLink();
+		
+	}
+	
+	@When("User clicks on link Practice Questions")
+	public void user_clicks_on_link_practice_questions() {
+	 
+		queuePage.clickPracticeQuestionsLink();
 		
 	}
 

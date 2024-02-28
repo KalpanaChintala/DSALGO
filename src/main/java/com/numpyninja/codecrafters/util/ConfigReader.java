@@ -11,6 +11,7 @@ public class ConfigReader {
 
 	/**
 	 * This method is used to load the properties from config.properties file
+	 * 
 	 * @return it returns Properties prop object
 	 */
 	public Properties init_prop() { // fn call in appln hooks
@@ -26,8 +27,17 @@ public class ConfigReader {
 			e.printStackTrace();
 		}
 
-		return prop; //entire ket, values pairs(as object) is read from property file and returned to hooks
+		return prop; // entire ket, values pairs(as object) is read from property file and returned
+						// to hooks
 
+	}
+
+	public  String getExcelFilePath() {
+		String excelfilelpath = prop.getProperty("excelfilepath");
+		if (excelfilelpath != null)
+			return excelfilelpath;
+		else
+			throw new RuntimeException("Please specify Excel file path in the config.properties file.");
 	}
 
 }

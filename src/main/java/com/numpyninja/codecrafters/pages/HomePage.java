@@ -13,7 +13,8 @@ public class HomePage {
 
 	// 1. By Locators: OR
 	private By getStartedQueueButton = By.xpath("//a[@href='queue']");
-	private By getStartedArrayButton = By.xpath("//a[@href='array']");
+	
+	private By getStartedTreeButton = By.xpath("//a[@href='tree']");
 	
 	// 2. Constructor of the page class:
 	public HomePage(WebDriver driver) {
@@ -24,5 +25,11 @@ public class HomePage {
 		
 		driver.findElement(getStartedQueueButton).click();
 		return new QueuePage(driver);
+	}
+	
+	public TreePage navigateToTreePage() {
+		
+		driver.findElement(getStartedTreeButton).click();
+		return new TreePage(driver);
 	}
 }

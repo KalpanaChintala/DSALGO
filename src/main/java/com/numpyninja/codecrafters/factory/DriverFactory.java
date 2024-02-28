@@ -23,7 +23,7 @@ public class DriverFactory {
 	 */
 	public WebDriver init_driver(String browser) {  //fn call in appln hooks
 
-		System.out.println("browser value is: " + browser);
+		//System.out.println("browser value is: " + browser);
 
 		if (browser.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();

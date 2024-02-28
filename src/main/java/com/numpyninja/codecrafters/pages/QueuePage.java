@@ -13,7 +13,7 @@ public class QueuePage {
 	private By collectionsDequeLink=By.xpath("//a[text()='Implementation using collections.deque']  ");
 	private By implementationUsingArrayLink=By.xpath("//a[text()='Implementation using array']");
 	private By queueOperationsLink=By.xpath("//a[text()= 'Queue Operations'] ");
-	
+	private By practiceQuestionsLink=By.xpath("//a[text()= 'Practice Questions'] ");
 	private By tryHereButton = By.xpath("//a[text()='Try here>>>']");
 	
 	
@@ -30,10 +30,12 @@ public class QueuePage {
 	
 	
 	public void clickOnImplementationOfQueueLink() {
+		
 		driver.findElement(implementationOfQueueLink).click();	
 	}
 	
-	public void clickOncollectionsDequeLink() {
+	public void clickOncollectionsDequeLink()  {
+		
 		driver.findElement(collectionsDequeLink).click();		
 	}
 	public void clickOnimplementationUsingArrayLink() {
@@ -46,7 +48,11 @@ public class QueuePage {
 	
 	public EditorPage navigateToEditorPage() {
 		driver.findElement(tryHereButton).click();
-		return new EditorPage(driver);
+		return new EditorPage(driver);		
+	}
+	
+	public void clickPracticeQuestionsLink() {
+		driver.findElement(practiceQuestionsLink).click();		
 		
 	}
 	

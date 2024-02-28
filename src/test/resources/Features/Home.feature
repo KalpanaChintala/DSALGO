@@ -3,7 +3,7 @@ Feature: Homepage features of the DSAlgoApplication
   Scenario: Select  drop down menu for Data Structures
     Given User is on the HomePage
     When User clicks on element DatastructuresDropdown
-    Then Verify all the links in DataStructureNavMenuItems"
+    Then Verify all the links in DataStructureNavMenuItems
       | Arrays      |
       | Linked List |
       | Stack       |

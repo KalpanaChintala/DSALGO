@@ -28,7 +28,7 @@ public class HomePageSteps {
 		String password = "NumpyNinja";
 		DriverFactory.getDriver()
 				.get("https://dsportalapp.herokuapp.com/login");
-		homePage = signInPage.doLogin(userName, password);//
+		//homePage = signInPage.doLogin(userName, password);
 	}
 
 	@When("User clicks on element DatastructuresDropdown")
