@@ -1,42 +1,37 @@
-Feature: Login scenarios of the SalesForce application
+Feature: SignIn features of the DSAlgoApplication
 
-  Scenario: Login into SaleForce application without password
-    Given User is on the "LoginPage"
-    When User enter into Textbox "Username" "march@solutions.com"
-    And User enter into Textbox "Password" ""
-    And User clicks on element "Login"
-    Then Assert: Message should be displayed "ErrorMessage" "Please enter your password."
+  Scenario: Validating Signin button with all fields empty
+    Given User is on the LoginPage
+    When User clicks on Signin button
+    Then An error message "Please fill out this field."  is displayed below Username textbox
 
-  Scenario: Login into SaleForce application with valid username and password
-    Given User is on the "LoginPage"
-    When User enter into Textbox "Username" "march@solutions.com"
-    And User enter into Textbox "Password" "Training123"
-    And User clicks on element "Login"
-    Given User is on the "HomePage"
+  Scenario: Validating Signin button after entering Username and all other fields empty
+    Given User is on the LoginPage
+    When User enters valid Username into the username textbox
+      | Username |
+      | Numpyninja  |
+    And User clicks on Signin button
+    Then An error message "Please fill out this field."  is displayed below Password textbox
 
-  Scenario: Login into SaleForce application by checking RememberMe checkbox
-    Given User is on the "LoginPage"
-    When User enter into Textbox "Username" "march@solutions.com"
-    And User enter into Textbox "Password" "Training123"
-    And User clicks on element "Checkbox"
-    And User clicks on element "Login"
-    Given User is on the "UserMenuPage"
-    When User clicks on element "Usermenu"
-    And User clicks on element "Logout"
-    Given User is on the "LoginPage"
-    Then Assert "Username" with name displayed "march@solutions.com"
-
-  Scenario: Test the Forgot Password caseA
-    Given User is on the "LoginPage"
-    When User clicks on element "ForgotPassword"
-    Given User is on the "ForgotPasswordPage"
-    When User enter into Textbox "ForgotPasswordUsername" "sherinsoman@gmail.com"
-    And User clicks on element "ContinueButton"
-    Then Assert: Message should be displayed "CheckYourEmailMessage" "Check Your Email"
-
-  Scenario: Test the Forgot Password caseB
-    Given User is on the "LoginPage"
-    When User enter into Textbox "Username" "123"
-    And User enter into Textbox "Password" "22131"
-    And User clicks on element "Login"
-    Then Assert: Message should be displayed "ErrorMessage" "Please check your username and password. If you still can't log in, contact your Salesforce administrator."
+  Scenario: Validating Signin button with valid username and password
+    Given User is on the LoginPage
+    When User enters valid username and password
+      | Username |   |Password|
+      | Numpyninja  || Codecrafters@123 |
+    And User clicks on Signin button
+    Then A message You are logged in is displayed 
+    
+  Scenario: Validating Signout button 
+    Given User is on the LoginPage
+    When User clicks signout button
+    Then A message You are logged out is displayed 
+    
+  Scenario: Validating Signin button with invalid username and password
+    Given User is on the LoginPage
+    When User enters Invalid username and password
+       | Username|
+       |djhdbchbd|
+       |Password|
+       |nnnmnfgsfgs|
+    And User clicks on Signin button
+    Then An error message Invalid username and password is displayed
