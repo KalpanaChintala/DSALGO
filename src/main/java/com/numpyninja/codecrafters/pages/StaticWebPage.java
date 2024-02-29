@@ -3,11 +3,11 @@ package com.numpyninja.codecrafters.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class LinkedListPage {
+public class StaticWebPage {
 
 	private WebDriver driver;
 	
-	public LinkedListPage(WebDriver driver) {
+	public StaticWebPage(WebDriver driver) {
 		this.driver = driver;
 	}
 	

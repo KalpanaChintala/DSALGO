@@ -4,18 +4,18 @@ import org.testng.Assert;
 
 import com.numpyninja.codecrafters.factory.DriverFactory;
 import com.numpyninja.codecrafters.pages.HomePage;
-import com.numpyninja.codecrafters.pages.LinkedListPage;
+import com.numpyninja.codecrafters.pages.StaticWebPage;
 import com.numpyninja.codecrafters.pages.SigninPage;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class LinkedListPageSteps {
+public class CommonSteps {
 	
 	private SigninPage signInPage = new SigninPage(DriverFactory.getDriver());
 	private HomePage homePage;
-	private LinkedListPage linkedListPage;
+	private StaticWebPage webPage;
 	
 	
 	@Given("user has already logged in to application with username {string} and password {string}")
@@ -26,17 +26,22 @@ public class LinkedListPageSteps {
 
 	@Given("User is on the LinkedList page after loggedin")
 	public void user_is_on_the_linked_list_page_after_loggedin() {
-		linkedListPage = homePage.clickOnLinkedListButton();
+		webPage = homePage.clickOnLinkedListButton();
+	}
+	
+	@Given("User is on the Stack page after loggedin")
+	public void user_is_on_the_stack_page_after_loggedin() {
+		webPage = homePage.clickOnStackButton();
 	}
 	
 	@When("User clicks on link {string}")
 	public void user_clicks_on(String linkText) {
-		linkedListPage.clickOnLink(linkText);
+		webPage.clickOnLink(linkText);
 	}
 
 	@Then("User lands on page with title {string}")
 	public void user_lands_on_page_with_title(String title) {
-	    Assert.assertEquals(linkedListPage.getTitle(), title);
+	    Assert.assertEquals(webPage.getTitle(), title);
 	}
 
 }

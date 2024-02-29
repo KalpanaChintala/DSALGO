@@ -1,15 +1,7 @@
 package com.numpyninja.codecrafters.pages;
 
-import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 
@@ -32,8 +24,9 @@ public class HomePage {
 	}
 
 	
-	public LinkedListPage clickOnLinkedListButton() {
-		try {
+	public StaticWebPage clickOnLinkedListButton() {
+		try
+		{
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
@@ -41,8 +34,26 @@ public class HomePage {
 		}
 		
 		driver.findElement(By.xpath("//a[@href='linked-list']")).click();
-		return new LinkedListPage(driver);
+		return new StaticWebPage(driver);
+	}
+	
+	public StaticWebPage clickOnStackButton() {
+		try
+		{
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		driver.findElement(By.xpath("//a[@href='stack']")).click();
+		return new StaticWebPage(driver);
 	}
 
+
 }
+
+
+
+
 
