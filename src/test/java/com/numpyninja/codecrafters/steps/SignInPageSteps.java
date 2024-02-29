@@ -28,7 +28,7 @@ public class SignInPageSteps {
 
 	@Then("An error message {string}  is displayed below Username textbox")
 	public void an_error_message_is_displayed_below_username_textbox(String Pleasefilloutthisfield) {
-	    Assert.assertTrue(SignInPage.Pleasefilloutthisfield());
+	    Assert.assertTrue(signinPage.Pleasefilloutthisfield());
 	}
 
 	@When("User enters valid Username into the username textbox")
@@ -47,7 +47,7 @@ public class SignInPageSteps {
 
 	@Then("An error message {string}  is displayed below Password textbox")
 	public void an_error_message_is_displayed_below_password_textbox(String Pleasefilloutthisfield) {
-		Assert.assertTrue(SignInPage.Pleasefilloutthisfield());
+		Assert.assertTrue(signinPage.Pleasefilloutthisfield());
 	}
 
 	@When("User enters valid username and password")
@@ -66,7 +66,7 @@ public class SignInPageSteps {
 
 	@Then("A message You are logged in is displayed")
 	public void a_message_is_displayed_below_password_textbox(String string) { 
-		Assert.assertTrue(SignInPage.isMessageExist());
+		Assert.assertTrue(signinPage.isMessageExist());
 	    
 	}
 
@@ -78,7 +78,7 @@ public class SignInPageSteps {
 
 	@Then("A message You are logged out is displayed")
 	public void a_message_is_displayed(String string) {
-		Assert.assertTrue(SignInPage.isMessageExist());
+		Assert.assertTrue(signinPage.isMessageExist());
 	}
 	
 	@When("User enters Invalid username and password")
@@ -89,6 +89,6 @@ public class SignInPageSteps {
 	
 	@Then("An error message Invalid username and password is displayed")
 	public void a_error_message_is_displayed(String string) {
-		Assert.assertTrue(SignInPage.isMessageExist());
+		Assert.assertTrue(signinPage.isMessageExist());
 	}
 }
