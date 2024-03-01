@@ -60,10 +60,13 @@ public class HomePage {
 		
 	}
 
-	public boolean GetStarted() {
-		// TODO Auto-generated method stub
-		return false;
+	public DSintroPage navigateTodataintroductionPage() {
+		driver.findElement(Datastructures).click();
+		
+		return new DSintroPage(driver);
 	}
+
+	
 	
 
 }

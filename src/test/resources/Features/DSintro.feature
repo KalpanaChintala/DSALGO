@@ -1,18 +1,14 @@
-Feature: DSIntro feature
+Feature: Data Structures Introduction Page features of the DSAlgoApplication
 
-Background: 
+  Background: 
     Given user has already logged in to application
-    
-Scenario: Validating DSIntroduction attribute
-  
-  When User clicks Data-Structures Introduction "Get Started" button
-  Then User should land on page with QA and Time Complexity down
-  Given User on DataStructure Introduction page
-  When User clicks on "Time Complexity"
-  Then User should land "Time Complexity " with "Try here" button down
-  When User clicks on "Try here" button
-  Then User should land on page with try editor box and Run button to test
-  When User clicks on "Practice Questions"
-  Then User should be redirected to the practice questions page
-  
+      | username   | password         |
+      | Numpyninja | Codecrafters@123 |
+
+  Scenario: Navigating to Data Structures Introduction Page 
+    Given User is on the Data Structures Introduction Page
+    When User clicks on link Time Complexity 
+    Then User lands on Data Structures Introduction Page with title  "Time Complexity"
+    When User clicks on Data Structures Introduction Page Try Here Button
+    Then User lands on the Editor page with title "Assessment"
   

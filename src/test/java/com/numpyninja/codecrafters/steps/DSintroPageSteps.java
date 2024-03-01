@@ -1,6 +1,14 @@
 package com.numpyninja.codecrafters.steps;
 
+import org.openqa.selenium.WebDriver;
+
+import org.testng.Assert;
+
 import com.numpyninja.codecrafters.factory.DriverFactory;
+import com.numpyninja.codecrafters.pages.DSintroPage;
+import com.numpyninja.codecrafters.pages.EditorPage;
+import com.numpyninja.codecrafters.pages.HomePage;
+import com.numpyninja.codecrafters.pages.SignInPage;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -8,50 +16,40 @@ import io.cucumber.java.en.When;
 
 public class DSintroPageSteps {
 	
-	@Given("user has already logged in to application")
-	public void user_has_already_logged_in_to_application() {
-		DriverFactory.getDriver().get("https://dsportalapp.herokuapp.com/login");
+	
+	private WebDriver driver = DriverFactory.getDriver();
+	
+	private SignInPage signinpage = new SignInPage(DriverFactory.getDriver());
+	//private SignInPage signInPage = new SignInPage(DriverFactory.getDriver());
+	private DSintroPage dataintroductionPage;
+	private HomePage homePage = new HomePage(DriverFactory.getDriver());
+	private EditorPage editorpage ;
+
+
+	@Given("User is on the Data Structures Introduction Page")
+	public void user_is_on_the_data_structures_introduction_page() {
+		dataintroductionPage = homePage.navigateTodataintroductionPage();
 	}
 
-	@When("User clicks Data-Structures Introduction {string} button")
-	public void user_clicks_data_structures_introduction_button(String string) {
+	@When("User clicks on link Time Complexity")
+	public void user_clicks_on_link_time_complexity() {
+		dataintroductionPage.clickOnTimeComplexityLink();
 	    
 	}
 
-	@Then("User should land on page with QA and Time Complexity down")
-	public void user_should_land_on_page_with_qa_and_time_complexity_down() {
+	@Then("User lands on Data Structures Introduction Page with title  {string}")
+	public void user_lands_on_data_structures_introduction_page_with_title(String expectedTitle ) {
+		String actualTitle=dataintroductionPage.getPageTitle();
+		
+		Assert.assertTrue(actualTitle.equals(expectedTitle));
 	    
 	}
 
-	@Given("User on DataStructure Introduction page")
-	public void user_on_data_structure_introduction_page() {
+	@When("User clicks on Data Structures Introduction Page Try Here Button")
+	public void user_clicks_on_data_structures_introduction_page_try_here_button() {
+		editorpage = dataintroductionPage.navigateToEditorPage();
 	    
 	}
 
-	@When("User clicks on {string}")
-	public void user_clicks_on(String string) {
-	    
+	
 	}
-
-	@Then("User should land {string} with {string} button down")
-	public void user_should_land_with_button_down(String string, String string2) {
-	    
-	}
-
-	@When("User clicks on {string} button")
-	public void user_clicks_on_button(String string) {
-	    
-	}
-
-	@Then("User should land on page with try editor box and Run button to test")
-	public void user_should_land_on_page_with_try_editor_box_and_run_button_to_test() {
-	    
-	}
-
-	@Then("User should be redirected to the practice questions page")
-	public void user_should_be_redirected_to_the_practice_questions_page() {
-	    
-	}
-
-
-}

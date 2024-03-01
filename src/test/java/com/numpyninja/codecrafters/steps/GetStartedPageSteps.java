@@ -33,11 +33,11 @@ public class GetStartedPageSteps {
 		getStartedPage.clickOnGetStartedButton();
 	}
 
-	@Then("User lands on Homepage with title Numpyninja")
+	@Then("User lands on Homepage with title NumpyNinja")
 	public void user_lands_on_homepage_with_title_numpyninja() {
 	    
 		String title=getStartedPage.getPageTitle();
-		Assert.assertTrue(title.equals("Numpyninja"));
+		Assert.assertTrue(title.equals("NumpyNinja"));
 		
 	}
 

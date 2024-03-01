@@ -1,13 +1,35 @@
 package com.numpyninja.codecrafters.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.WebDriver;
 
 public class DSintroPage {
-	
+
 	private static WebDriver driver;
-	
-	//1.By Locators: OR
-//private By DSIntroGetStarted=By.xpath("/html/body/div/div/div/div//a[@href=\"data-structures-introduction\"]");
-//private By TimeComplexity=By.xpath("/html/body/div[2]/ul//a[@href=\"time-complexity\"]");
-}///html/body/div[2]/div/div[2]//a[@href="/tryEditor"]
+
+	// 1.By Locators: OR
+
+	private By timecomplexitylink = By.xpath("//a[text()='Time Complexity']");
+	private By tryHereButton = By.xpath("//a[text()='Try here>>>']");
+
+	// 2. Constructor of the page class:
+	public DSintroPage(WebDriver driver) {
+		DSintroPage.driver = driver;
+	}
+
+	public String getPageTitle() {
+		return driver.getTitle();
+	}
+
+	public void clickOnTimeComplexityLink() {
+		driver.findElement(timecomplexitylink).click();
+	}
+
+	public EditorPage navigateToEditorPage() {
+		driver.findElement(tryHereButton).click();
+		return new EditorPage(driver);
+
+	}
+}

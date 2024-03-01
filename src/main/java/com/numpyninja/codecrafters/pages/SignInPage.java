@@ -45,12 +45,12 @@ public class SignInPage {
 		driver.findElement(LogInButton).click();
 	}
 
-	public SignInPage doLogin(String un, String pwd) {
-		System.out.println("login with: " + un + " and " + pwd);
-		driver.findElement(UsernameTxtBox).sendKeys(un);
-		driver.findElement(PasswordTxtBox).sendKeys(pwd);
+    public HomePage doLogin(String username, String password) {
+		
+		driver.findElement(UsernameTxtBox).sendKeys(username);
+		driver.findElement(PasswordTxtBox).sendKeys(password);
 		driver.findElement(LogInButton).click();
-		return new SignInPage(driver);
+		return new HomePage(driver);//returns the next page
 	}
 	 public String getErrMsgUN() {
 		    return ((WebElement) divErrorMsgUN).getText();  
@@ -94,6 +94,31 @@ public class SignInPage {
 		return false;
 	}
 
+	public void clickOnDataStructuresIntroductionbutton() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public SignInPage navigateToHomePage1() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void clickOnDSIntroGetStarted() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public SignInPage navigateToHomePage() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+
+	
+
+	
 	
 
 	
