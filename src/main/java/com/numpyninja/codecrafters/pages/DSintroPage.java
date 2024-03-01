@@ -24,6 +24,12 @@ public class DSintroPage {
 	}
 
 	public void clickOnTimeComplexityLink() {
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		driver.findElement(timecomplexitylink).click();
 	}
 

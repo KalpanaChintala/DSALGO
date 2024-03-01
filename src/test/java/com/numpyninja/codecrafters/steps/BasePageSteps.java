@@ -15,7 +15,7 @@ import io.cucumber.java.en.Given;
 public class BasePageSteps {
 
 	private SignInPage signInPage = new SignInPage(DriverFactory.getDriver());
-	private HomePage homePage = new HomePage(DriverFactory.getDriver());
+	private HomePage homePage;
 
 	@Given("user has already logged in to application")
 	public void user_has_already_logged_in_to_application(DataTable credTable) {

@@ -5,19 +5,19 @@ import org.openqa.selenium.WebDriver;
 
 public class HomePage {
 	
-	private static WebDriver driver;
+	private  WebDriver driver;
 	String URL = "https://dsportalapp.herokuapp.com/";
 
 	// 1. By Locators: OR
 	private By GetStartedButton = By.className ("btn");
-	private static By Datastructures = By.xpath ("/html/body/div/nav/div/div/div/a");
-	private static By Array = By.xpath ("//a[@href='/array']");
-	private static By Linkedlist = By.xpath ("//a[@href='/linked-list']");
-	private static By Stack = By.xpath ("//a[@href='/stack']");
-	private static By Queue = By.xpath ("//a[@href='/queue']");
-	private static By Tree = By.xpath ("//a[@href='/tree']");
-	private static By Graph = By.xpath ("//a[@href='/graph']");
-	private static By Youarenotloggedinlink = By.className("alert alert-primary");
+	private  By Datastructures = By.xpath ("//a[@href='data-structures-introduction']");
+	private  By Array = By.xpath ("//a[@href='/array']");
+	private  By Linkedlist = By.xpath ("//a[@href='/linked-list']");
+	private  By Stack = By.xpath ("//a[@href='/stack']");
+	private  By Queue = By.xpath ("//a[@href='/queue']");
+	private  By Tree = By.xpath ("//a[@href='/tree']");
+	private  By Graph = By.xpath ("//a[@href='/graph']");
+	private  By Youarenotloggedinlink = By.xpath ("//a[@href='/graph']");
 	
 	
 	
@@ -37,25 +37,25 @@ public class HomePage {
 	public void clickOnGetStarted() {
 		driver.findElement(GetStartedButton).click();
 	}
-	public static void clickOnDatastructures() {
+	public  void clickOnDatastructures() {
 		driver.findElement(Datastructures).click();
 	}
-	public static void clickOnArray() {
+	public  void clickOnArray() {
 		driver.findElement(Array).click();
     }
-	public static void clickOnLinkedlist() {
+	public  void clickOnLinkedlist() {
 		driver.findElement(Linkedlist).click();
 	}
-	public static void clickOnStack() {
+	public  void clickOnStack() {
 		driver.findElement(Stack).click();
 	}
-	public static void clickOnQueue() {
+	public  void clickOnQueue() {
 		driver.findElement(Queue).click();
 	}
-	public static void clickOnTree() {
+	public  void clickOnTree() {
 		driver.findElement(Tree).click();
 	}
-	public static void clickOnGraph() {
+	public  void clickOnGraph() {
 		driver.findElement(Graph).click();
 		
 	}
