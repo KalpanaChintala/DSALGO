@@ -4,7 +4,7 @@ Feature: Homepage features of the DSAlgoApplication
     Given User is on the Home page
     When User clicks on Get Started button on homepage "<option>" without login
     Then User gets warning message "You are not logged in"
-    
+
     Examples: 
       | option         |
       | Datastructures |
@@ -14,7 +14,6 @@ Feature: Homepage features of the DSAlgoApplication
       | Queue          |
       | Tree           |
       | Graph          |
-      
 
   Scenario Outline: User clicks on dropdown "<option>" without sign in
     Given User is on the Home page
@@ -30,23 +29,20 @@ Feature: Homepage features of the DSAlgoApplication
       | Tree       |
       | Graph      |
 
-   Scenario: Homepage Sign-in link 
-    Given User is on the HomePage
+  Scenario: Homepage Sign-in link
+    Given User is on the Home page
     Then Sign in link should be displayed
-    
-    Scenario: Homepage register link
-    Given User is on the HomePage
-    Then Register link should be displayed 
-    
-    
-    Scenario: Click on Signin takes you to Signin page
-    Given User is on the HomePage
+
+  Scenario: Homepage register link
+    Given User is on the Home page
+    Then Register link should be displayed
+
+  Scenario: Click on Signin takes you to Signin page
+    Given User is on the Home page
     When User click on signin link
     Then User lands on Signin page with title "Login"
-    
-    Scenario: Click on Register takes you to Register page
-    Given User is on the HomePage
+
+  Scenario: Click on Register takes you to Register page
+    Given User is on the Home page
     When User click on register link
     Then User lands on Register page with title "Registration"
-    
-    

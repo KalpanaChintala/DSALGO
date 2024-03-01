@@ -1,4 +1,4 @@
-package com.numpyninja.codecrafters.steps;
+package com.numpyninja.codecrafters.hooks;
 
 import java.util.Properties;
 
