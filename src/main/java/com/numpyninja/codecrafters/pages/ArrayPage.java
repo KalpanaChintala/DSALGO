@@ -18,6 +18,16 @@ public class ArrayPage {
 
 	// 1. By Locators:
 	private By ArraysinPythonLink=By.xpath("//a[text()='Arrays in Python']");
+	
+	
+	@FindBy(xpath="//*[text()=\"Arrays Using List\"]")
+	private WebElement arraysUsingList;
+
+	@FindBy(xpath="//*[text()=\"Basic Operations in Lists\"]")
+	private WebElement basicOperationsInLists;
+
+	@FindBy(xpath="//*[text()=\"Applications of Array\"]")
+	private WebElement applicationsofArray;
 	 
 	@FindBy(xpath="//*[text()=\"Try here>>>\"]")
 	private WebElement tryhere;
@@ -28,6 +38,8 @@ public class ArrayPage {
 		PageFactory.initElements(driver, this);
 	}
 	
+
+	
 	public String getPageTitle() {
 		return driver.getTitle();
 	}
@@ -37,6 +49,24 @@ public class ArrayPage {
 		return tryhere;
 	}
 	
+	
+	
+	public void clickOnArraysUsingList()
+	{
+		Actions actions=new Actions(driver);
+		actions.scrollToElement(arraysUsingList).build().perform();
+		arraysUsingList.click();
+		
+	}
+	public void clickOnBasicOperationsInLists()
+	{
+		basicOperationsInLists.click();
+	}
+	public void clickOnApplicationsofArray()
+	{
+		applicationsofArray.click();
+	}
+
 	public void clickOnArraysInPythonLink() {
 		driver.findElement(ArraysinPythonLink).click();	
 	}
