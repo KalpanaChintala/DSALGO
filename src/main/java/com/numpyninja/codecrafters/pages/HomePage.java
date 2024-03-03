@@ -1,14 +1,10 @@
 package com.numpyninja.codecrafters.pages;
-
 import org.openqa.selenium.By;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import com.numpyninja.codecrafters.util.ElementUtil;
-
 public class HomePage {
 
 	private WebDriver driver;
@@ -16,7 +12,6 @@ public class HomePage {
 	// ElementUtil elementUtil = new ElementUtil(driver);
 
 	// webelements for modules
-
 	@FindBy(xpath = "//a[@href='data-structures-introduction']")
 	WebElement getStartedDSIntroductionButton;
 	@FindBy(xpath = "//a[@href='array']")
@@ -32,11 +27,11 @@ public class HomePage {
 	@FindBy(xpath = "//a[@href='graph']")
 	WebElement getStartedGraphButton;
 
-	// webelement for user not logged in alert msg
+// webelement for user not logged in alert msg
 	@FindBy(xpath = "//div[@class='alert alert-primary']")
 	WebElement alertmsg;
 
-	// webelements for dropdown
+// webelements for dropdown
 	@FindBy(xpath = "//a[text()='Data Structures']")
 	WebElement dropdown_DS;
 	@FindBy(xpath = "//a[text()='Arrays']")
@@ -52,16 +47,42 @@ public class HomePage {
 	@FindBy(xpath = "//a[text()='Graph']")
 	WebElement dropdown_graph;
 
-	// Webelement for register and login links
+// Webelement for register and login links
 	@FindBy(xpath = "//a[@href='/register']")
 	WebElement register;
 	@FindBy(xpath = "//a[@href='/login']")
 	WebElement login;
 
-	// 2. Constructor of the page class:
+// 2. Constructor of the page class:
 	public HomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		this.driver = driver;
+	}
+
+	String URL = "https://dsportalapp.herokuapp.com/";
+
+	public StaticWebPage clickOnLinkedListButton() {
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		driver.findElement(By.xpath("//a[@href='linked-list']")).click();
+		return new StaticWebPage(driver);
+	}
+
+	public StaticWebPage clickOnStackButton() {
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		driver.findElement(By.xpath("//a[@href='stack']")).click();
+		return new StaticWebPage(driver);
 	}
 
 	public QueuePage navigateToQueuePage() {
