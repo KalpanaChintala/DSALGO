@@ -4,3 +4,4 @@ allure-results/
 .classpath
 .project
 .settings/
+test-output/

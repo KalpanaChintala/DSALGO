@@ -7,7 +7,7 @@ import com.numpyninja.codecrafters.factory.DriverFactory;
 import com.numpyninja.codecrafters.pages.EditorPage;
 import com.numpyninja.codecrafters.pages.HomePage;
 import com.numpyninja.codecrafters.pages.QueuePage;
-import com.numpyninja.codecrafters.pages.SignInPage;
+import com.numpyninja.codecrafters.pages.SigninPage;
 import io.cucumber.datatable.DataTable;
 
 import io.cucumber.java.en.Given;
@@ -16,7 +16,7 @@ import io.cucumber.java.en.When;
 
 public class QueuePageSteps {
 	
-	private SignInPage signInPage = new SignInPage(DriverFactory.getDriver());
+	private SigninPage signInPage = new SigninPage(DriverFactory.getDriver());
 	private HomePage homePage = new HomePage(DriverFactory.getDriver());
 	private QueuePage queuePage;
 	private EditorPage editorPage;

@@ -1,14 +1,14 @@
 package com.numpyninja.codecrafters.steps;
 import com.numpyninja.codecrafters.factory.DriverFactory;
 import com.numpyninja.codecrafters.pages.RegisterPage;
-import com.numpyninja.codecrafters.pages.SignInPage;
+import com.numpyninja.codecrafters.pages.SigninPage;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class SignInPageSteps {
-	private SignInPage signInPage = new SignInPage(DriverFactory.getDriver());
+	private SigninPage signInPage = new SigninPage(DriverFactory.getDriver());
 	
 	@Given("The user is on Login Page")
 	public void the_user_is_on_login_page() {
