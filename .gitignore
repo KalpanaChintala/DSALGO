@@ -1,1 +1,6 @@
 /target/
+/bin/
+allure-results/
+.classpath
+.project
+.settings/

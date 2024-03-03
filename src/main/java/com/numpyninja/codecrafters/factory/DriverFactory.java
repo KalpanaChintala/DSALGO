@@ -15,7 +15,7 @@ public class DriverFactory {
 	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
 
 	/**
-	 * This method is used to initialize the thradlocal driver on the basis of given
+	 * This method is used to initialize the threadlocal driver on the basis of given
 	 * browser
 	 * 
 	 * @param browser
@@ -23,7 +23,7 @@ public class DriverFactory {
 	 */
 	public WebDriver init_driver(String browser) {  //fn call in appln hooks
 
-		System.out.println("browser value is: " + browser);
+		//System.out.println("browser value is: " + browser);
 
 		if (browser.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
