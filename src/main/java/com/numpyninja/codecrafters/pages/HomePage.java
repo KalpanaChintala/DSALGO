@@ -194,4 +194,8 @@ public class HomePage {
 		return (register.isDisplayed());
 
 	}
+	public DSintroPage navigateTodataintroductionPage() {
+		getStartedDSIntroductionButton.click();
+		return new DSintroPage(driver);
+	}
 }
