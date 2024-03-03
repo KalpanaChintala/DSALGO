@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import io.cucumber.datatable.DataTable;
 
-public class SigninPage {
+public class SignInPage {
 	private WebDriver driver;
 
 	// 1. By Locators: OR
@@ -14,7 +14,7 @@ public class SigninPage {
 	private By LoginButton = By.xpath("//*[@value='Login']");
 	
 	// 2. Constructor of the page class:
-	public SigninPage(WebDriver driver) {
+	public SignInPage(WebDriver driver) {
 		this.driver = driver;
 	}
 	
