@@ -35,10 +35,19 @@ public class SigninPageSteps {
 		DriverFactory.getDriver().get("https://dsportalapp.herokuapp.com/home");
 	}
 
-	@Then("User should be able to see the alert message {string}.")
-	public void user_should_be_able_to_see_the_alert_message(String expectedMessageStr) {
-		String actualMessageStr = signinPage.getMessageString();
-		Assert.assertEquals(expectedMessageStr, actualMessageStr);
+	@Then("User should be able to see the alert message {string}")
+	public void user_should_be_able_to_see_the_alert_message(String expectedmessageStr) {
+
+		String messageStr = signinPage.getMessageString();
+		System.out.println("Alert message is :" + messageStr);
+		Assert.assertEquals(expectedmessageStr, messageStr);
 	}
 
+	@Then("User should be able to see the message displayed {string}")
+	public void user_should_be_able_to_see_the_message_displayed(String expectedResult) {
+		String actualResult = signinPage.getErrorMessage();
+		System.out.println(actualResult);
+
+		Assert.assertEquals(expectedResult, actualResult);
+	}
 }
