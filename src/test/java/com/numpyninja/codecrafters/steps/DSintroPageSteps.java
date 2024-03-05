@@ -51,6 +51,12 @@ public class DSintroPageSteps {
 		editorpage = dataintroductionPage.navigateToEditorPage();
 	    
 	}
+	@Then("User lands on the Editor page with title {string}")
+	public void user_lands_on_the_editor_page_with_title(String Title) {
+             String actualTitle=dataintroductionPage.getPageTitle();
+		     Assert.assertTrue(actualTitle.equals(Title));
+	    
+	}
 
 	
 	}

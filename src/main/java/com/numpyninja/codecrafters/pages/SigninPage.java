@@ -14,6 +14,7 @@ public class SigninPage {
 	private By UserName = By.xpath("//input[@id='id_username']");
 	private By Password = By.xpath("//input[@id='id_password']");
 	private By LoginButton = By.xpath("//*[@value='Login']");
+	private By errorMessage;
 
 	// 2. Constructor of the page class:
 	public SigninPage(WebDriver driver) {
@@ -59,6 +60,8 @@ public class SigninPage {
 		System.out.println("Alert message is :" + messageStr);
 		return messageStr;
 	}
+
+	
 }
 
 
