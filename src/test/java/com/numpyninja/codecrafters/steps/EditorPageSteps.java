@@ -3,12 +3,14 @@ package com.numpyninja.codecrafters.steps;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
+import java.util.Properties;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.testng.Assert;
 
 import com.numpyninja.codecrafters.factory.DriverFactory;
 import com.numpyninja.codecrafters.pages.EditorPage;
+import com.numpyninja.codecrafters.util.ConfigReader;
 import com.numpyninja.codecrafters.util.ExcelReader;
 
 
@@ -38,16 +40,21 @@ public class EditorPageSteps {
 	@When("User enters valid python code in Editor from sheet {string} and {int}")
 	public void user_enters_valid_python_code_in_editor_from_sheet_and(String sheetName, Integer rowNum) throws InvalidFormatException, IOException {
 		System.out.println("Sheet name "+sheetName);
+		ConfigReader configReader = new ConfigReader();
+		Properties prop = configReader.init_prop();
 		//Reading the code from the excel sheet named Success and storing to variables code and result
 		ExcelReader reader = new ExcelReader();
 		//each row corresponds to a list(testData) and for each row there are a key-value pairs
-		List<Map<String,String>> testData = 
-				reader.getData("./src/test/resources/Exceldata/PythonTestData.xlsx", sheetName);
+		
+		String filePath=prop.getProperty("pythonexcelfilepath");
+		
+		System.out.println("Excel sheet path is: "+ filePath);
+		List<Map<String,String>> testData = reader.getData(filePath, sheetName);
 		
 		String code = testData.get(rowNum).get("pythonCode");
 		String result = testData.get(rowNum).get("result");
 		
-		
+		System.out.println("Current code = "+code);
 		//entering the code read from excel sheet into the editor box
 		editorPage.enterCodeToEditor(code);
 		
