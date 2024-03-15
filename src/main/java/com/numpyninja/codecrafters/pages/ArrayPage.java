@@ -2,8 +2,10 @@ package com.numpyninja.codecrafters.pages;
 
 import java.io.IOException;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -15,6 +17,7 @@ import com.numpyninja.codecrafters.util.ReadDatafromFile;
 public class ArrayPage {
 
 	private WebDriver driver;
+	private Action  action;
 
 	// 1. By Locators:
 	private By ArraysinPythonLink=By.xpath("//a[text()='Arrays in Python']");
@@ -78,5 +81,18 @@ public class ArrayPage {
 		TryEditor tryEditor=new TryEditor(driver);
 		Actions actions=new Actions(driver);
 		actions.sendKeys(tryEditor.getEditorTextBox(), readData).build().perform();
+		
+
+//public static void TextIndentation(WebDriver driver, WebElement pythonElement, int row, int space,boolean flag) {
+		// action = new Actions(driver);
+	       // Keys cmdCtrl = Platform.getCurrent().is(Platform.MAC) ? Keys.COMMAND : Keys.CONTROL;
+		//for(int i=1;i<=row;i++) {
+		     // action.sendKeys(Keys.ARROW_UP).keyUp(Keys.SHIFT).perform();
+		      // for(int j=1;j<=space;j++) {
+	          //  if(i==1 && flag) action.sendKeys(Keys.BACK_SPACE).perform();
+	          //  else action.sendKeys(Keys.DELETE).perform();
+			   }
+	//	}
+	//}
+		
 	}
-}

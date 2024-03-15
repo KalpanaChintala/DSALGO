@@ -1,9 +1,8 @@
-package stepDefination;
+package com.numpyninja.codecrafters.steps;
 import org.junit.Assert;
 
+import com.numpyninja.codecrafters.factory.DriverFactory;
 import com.numpyninja.codecrafters.pages.GetStartedPage;
-
-import codecrafters.factory.DriverFactory;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

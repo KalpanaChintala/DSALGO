@@ -1,6 +1,6 @@
-package stepDefination;
+package com.numpyninja.codecrafters.steps;
 
-import codecrafters.factory.DriverFactory;
+import com.numpyninja.codecrafters.factory.DriverFactory;
 import com.numpyninja.codecrafters.pages.HomePage;
 import com.numpyninja.codecrafters.pages.SigninPage;
 
@@ -11,7 +11,7 @@ import io.cucumber.java.en.When;
 public class HomePageSteps {
 	
 	private SigninPage signInPage = new SigninPage(DriverFactory.getDriver());
-	private HomePage homePage;
+	
 
 	
 	@Given("User is on the HomePage")
@@ -28,7 +28,7 @@ public class HomePageSteps {
 		String password = "NumpyNinja";
 		DriverFactory.getDriver()
 				.get("https://dsportalapp.herokuapp.com/login");
-		homePage = signInPage.doLogin(userName, password);//
+		HomePage homePage = signInPage.doLogin(userName, password);//
 	}
 
 	@When("User clicks on element DatastructuresDropdown")

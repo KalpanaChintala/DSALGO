@@ -1,4 +1,4 @@
-package codecrafters.factory;
+package com.numpyninja.codecrafters.factory;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

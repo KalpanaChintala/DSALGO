@@ -1,14 +1,14 @@
-package stepDefination;
+package com.numpyninja.codecrafters.steps;
 
 import java.util.List;
 import java.util.Map;
 
 import org.openqa.selenium.WebDriver;
 
+import com.numpyninja.codecrafters.factory.DriverFactory;
 import com.numpyninja.codecrafters.pages.HomePage;
 import com.numpyninja.codecrafters.pages.SigninPage;
 
-import codecrafters.factory.DriverFactory;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 

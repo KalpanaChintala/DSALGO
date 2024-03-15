@@ -1,4 +1,4 @@
-package com.numpyninja.codecrafters.runner;
+package TestRunner;
 
 
 import io.cucumber.junit.Cucumber;
@@ -9,8 +9,8 @@ import org.testng.annotations.DataProvider;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src\\test\\resources\\Features", glue = {
-		"com.numpyninja.codecrafters.steps", "com.numpyninja.codecrafters.hooks" }, plugin = { "pretty",
+@CucumberOptions(features = "src/test/resources/Array.feature", glue = {
+		"stepDefination", "hooks" }, plugin = { "pretty",
 				"html:target/cucumber-reports/report.html", "json:target/cucumber-reports/report.json",
 				"junit:target/cucumber-reports/report.xml" }, monochrome = true, publish = true)
 

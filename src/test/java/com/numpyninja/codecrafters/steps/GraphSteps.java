@@ -1,4 +1,4 @@
-package stepDefination;
+package com.numpyninja.codecrafters.steps;
 
 import java.io.IOException;
 
@@ -7,12 +7,11 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
-
+import com.numpyninja.codecrafters.factory.DriverFactory;
 import com.numpyninja.codecrafters.pages.GraphPage;
 import com.numpyninja.codecrafters.pages.HomePage;
 import com.numpyninja.codecrafters.pages.TryEditor;
 
-import codecrafters.factory.DriverFactory;
 import io.cucumber.java.en.*;
 
 

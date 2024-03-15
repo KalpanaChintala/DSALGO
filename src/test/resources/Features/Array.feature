@@ -14,7 +14,7 @@ Feature: Verifying the Array Functionalities
 
     Examples: 
       | FilePath                                 |
-      | src/test/resources//SamplePythonCode.txt |
+      | src/test/resources/Exceldata/SamplePythonCode.txt|
 
   Scenario: Checking the functionality of Array Using List
     Given User is on Array Page
