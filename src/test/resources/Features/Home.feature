@@ -1,6 +1,5 @@
 Feature: Homepage features of the DSAlgoApplication
 
-  @home
   Scenario Outline: User clicks on  GetStarted button "<option>" on home page without sign in
     Given User is on the Home page
     When User clicks on Get Started button on homepage "<option>" without login
@@ -16,7 +15,6 @@ Feature: Homepage features of the DSAlgoApplication
       | Tree           |
       | Graph          |
 
-  @home
   Scenario Outline: User clicks on dropdown "<option>" without sign in
     Given User is on the Home page
     When User clicks on DatastructuresDropdown "<option>"
@@ -31,23 +29,19 @@ Feature: Homepage features of the DSAlgoApplication
       | Tree       |
       | Graph      |
 
-  @home
   Scenario: Homepage Sign-in link
     Given User is on the Home page
     Then Sign in link should be displayed
 
-  @home
   Scenario: Homepage register link
     Given User is on the Home page
     Then Register link should be displayed
 
-  @home
   Scenario: Click on Signin takes you to Signin page
     Given User is on the Home page
     When User click on signin link
     Then User lands on Signin page with title "Login"
 
-  @home
   Scenario: Click on Register takes you to Register page
     Given User is on the Home page
     When User click on register link

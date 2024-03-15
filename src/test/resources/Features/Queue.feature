@@ -11,6 +11,14 @@ Feature: Queue page features of the DSAlgoApplication
     Then User lands on Queue page with title  "Implementation of Queue in Python"
     When User clicks on Queue page Try Here Button
     Then User lands on the Editor page with title "Assessment"
+    When User enters valid python code in Editor from sheet "<Sheetname>" and <RowNumber>
+    And Clicks on run button
+    Then User should be able to see the output
+
+    Examples: 
+      | Sheetname | RowNumber |
+     | ValidCode |         0 |
+     #| ValidCode |         1 |
 
   Scenario: Navigating to Implementation using collections.deque page from Queue page
     Given User is on the queue page
@@ -18,6 +26,14 @@ Feature: Queue page features of the DSAlgoApplication
     Then User lands on Queue page with title  "Implementation using collections.deque"
     When User clicks on Queue page Try Here Button
     Then User lands on the Editor page with title "Assessment"
+   When User enters valid python code in Editor from sheet "<Sheetname>" and <RowNumber>
+    And Clicks on run button
+    Then User should be able to see the output
+
+    Examples: 
+      | Sheetname | RowNumber |
+     | ValidCode |         0 |
+     #| ValidCode |         1 |
 
   Scenario: Navigating to Implementation using array page from Queue page
     Given User is on the queue page
@@ -25,6 +41,14 @@ Feature: Queue page features of the DSAlgoApplication
     Then User lands on Queue page with title  "Implementation using array"
     When User clicks on Queue page Try Here Button
     Then User lands on the Editor page with title "Assessment"
+    When User enters valid python code in Editor from sheet "<Sheetname>" and <RowNumber>
+    And Clicks on run button
+    Then User should be able to see the output
+
+    Examples: 
+      | Sheetname | RowNumber |
+     | ValidCode |         0 |
+     #| ValidCode |         1 |
 
   Scenario: Navigating to Queue Operations page from Queue page
     Given User is on the queue page
@@ -32,6 +56,14 @@ Feature: Queue page features of the DSAlgoApplication
     Then User lands on Queue page with title  "Queue Operations"
     When User clicks on Queue page Try Here Button
     Then User lands on the Editor page with title "Assessment"
+    When User enters valid python code in Editor from sheet "<Sheetname>" and <RowNumber>
+    And Clicks on run button
+    Then User should be able to see the output
+
+    Examples: 
+      | Sheetname | RowNumber |
+     | ValidCode |         0 |
+     #| ValidCode |         1 |
     
     Scenario: Switching between different links on Queue
     Given User is on the queue page

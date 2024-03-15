@@ -69,20 +69,19 @@ for (String line : lines) {
 	
 	}
 	public void clickOnRunButton() {
-		
-		driver.findElement(runButton).click();
-	}
-
-	public void verifyOutputInEditor() {
-
-		String actualOutput = driver.findElement(tryEditorOutput).getText();
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(1000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println("Editor output is  : " + actualOutput);
+		driver.findElement(runButton).click();
+	}
+
+	public String verifyOutputInEditor() {
+
+		String actualOutput = driver.findElement(tryEditorOutput).getText();
+		return actualOutput;
 	}
 
 }

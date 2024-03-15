@@ -21,7 +21,7 @@ import io.cucumber.java.en.When;
 public class EditorPageSteps {
 	
 	private EditorPage editorPage = new EditorPage(DriverFactory.getDriver());
-	
+	String result;
 	@Given("User is on the editor page")
 	public void user_is_on_the_editor_page() {
 	
@@ -52,11 +52,12 @@ public class EditorPageSteps {
 		List<Map<String,String>> testData = reader.getData(filePath, sheetName);
 		
 		String code = testData.get(rowNum).get("pythonCode");
-		String result = testData.get(rowNum).get("result");
+		result = testData.get(rowNum).get("result");
 		
 		System.out.println("Current code = "+code);
 		//entering the code read from excel sheet into the editor box
 		editorPage.enterCodeToEditor(code);
+		
 		
 	}
 
@@ -68,8 +69,10 @@ public class EditorPageSteps {
 
 	@Then("User should be able to see the output")
 	public void user_should_be_able_to_see_the_output() {
-	    
-		editorPage.verifyOutputInEditor();
+		
+		String actualOutput=editorPage.verifyOutputInEditor();
+		
+				Assert.assertTrue(actualOutput.equals(result));
 	}
 
 

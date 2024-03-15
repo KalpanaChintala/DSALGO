@@ -26,6 +26,16 @@ public class HomePage {
 	WebElement getStartedTreeButton;
 	@FindBy(xpath = "//a[@href='graph']")
 	WebElement getStartedGraphButton;
+	
+	@FindBy(xpath="//*[text()=\"Data Structures\"]")
+	private WebElement dataStructuredropdown;
+	
+	@FindBy(xpath="//*[text()=\"Arrays\"]")
+	private WebElement Arraysoptions;
+	
+	@FindBy(xpath="//*[text()=\"Graph\"]")
+	private WebElement Graphoptions;
+
 
 // webelement for user not logged in alert msg
 	@FindBy(xpath = "//div[@class='alert alert-primary']")
@@ -69,7 +79,8 @@ public class HomePage {
 			e.printStackTrace();
 		}
 
-		driver.findElement(By.xpath("//a[@href='linked-list']")).click();
+		//driver.findElement(By.xpath("//a[@href='linked-list']")).click();
+		getStartedLinkedlistButton.click();
 		return new StaticWebPage(driver);
 	}
 
@@ -81,7 +92,8 @@ public class HomePage {
 			e.printStackTrace();
 		}
 
-		driver.findElement(By.xpath("//a[@href='stack']")).click();
+		//driver.findElement(By.xpath("//a[@href='stack']")).click();
+		getStartedStackButton.click();
 		return new StaticWebPage(driver);
 	}
 
@@ -95,6 +107,20 @@ public class HomePage {
 
 		getStartedTreeButton.click();
 		return new TreePage(driver);
+	}
+	
+	public ArrayPage navigateToArrayPage()
+	{
+		dataStructuredropdown.click();
+		Arraysoptions.click();
+		return new ArrayPage(driver);
+	}
+	
+	public GraphPage navigateToGraphPage()
+	{
+		dataStructuredropdown.click();
+		Graphoptions.click();
+		return new GraphPage(driver);
 	}
 
 	public void getStartedForModules(String string) {
