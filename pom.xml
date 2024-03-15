@@ -98,6 +98,7 @@
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
+                
             </plugin>
             <plugin>
                 <groupId>net.masterthought</groupId>

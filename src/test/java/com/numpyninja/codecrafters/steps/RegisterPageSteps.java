@@ -2,6 +2,7 @@ package com.numpyninja.codecrafters.steps;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
+import java.util.Properties;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.testng.Assert;
@@ -9,6 +10,7 @@ import org.testng.Assert;
 import com.numpyninja.codecrafters.factory.DriverFactory;
 import com.numpyninja.codecrafters.pages.GetStartedPage;
 import com.numpyninja.codecrafters.pages.RegisterPage;
+import com.numpyninja.codecrafters.util.ConfigReader;
 import com.numpyninja.codecrafters.util.ExcelReader;
 
 import io.cucumber.datatable.DataTable;
@@ -29,12 +31,13 @@ public class RegisterPageSteps {
 
 	@When("User fills the page from given sheetname {string} and rownumber {int}")
 	public void user_fills_the_page_from_given_sheetname_and_rownumber(String sheetName, Integer rowNum) throws InvalidFormatException, IOException {
-	   
+		ConfigReader configReader = new ConfigReader();
+		Properties prop = configReader.init_prop();
 		//Reading the code from the excel sheet named Success and storing to variables code and result
 				ExcelReader reader = new ExcelReader();
 				//each row corresponds to a list(testData) and for each row there are a key-value pairs
-				List<Map<String,String>> testData = 
-						reader.getData("./src/test/resources/Exceldata/RegisterTestData.xlsx", sheetName);
+				String filePath=prop.getProperty("registerexcelfilepath");
+				List<Map<String,String>> testData = reader.getData(filePath, sheetName);
 				
 				String username = testData.get(rowNum).get("Username");
 				String password = testData.get(rowNum).get("Password");
