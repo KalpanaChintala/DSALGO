@@ -2,30 +2,30 @@
 <testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-02T00:55:25 CST" name="Default suite" finished-at="2024-03-02T00:55:25 CST" duration-ms="200">
+  <suite started-at="2024-03-13T20:40:14 CDT" name="Default suite" finished-at="2024-03-13T20:40:14 CDT" duration-ms="382">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@131774fe]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.numpyninja.codecrafters.runner.TestRunner@65fb9ffc]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-03-02T00:55:25 CST" name="Default test" finished-at="2024-03-02T00:55:25 CST" duration-ms="200">
-      <class name="Runner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Runner.TestRunner@131774fe]" started-at="2024-03-02T00:55:25 CST" name="setUpClass" finished-at="2024-03-02T00:55:25 CST" duration-ms="167" status="PASS">
+    <test started-at="2024-03-13T20:40:14 CDT" name="Default test" finished-at="2024-03-13T20:40:14 CDT" duration-ms="382">
+      <class name="com.numpyninja.codecrafters.runner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.numpyninja.codecrafters.runner.TestRunner@65fb9ffc]" started-at="2024-03-13T20:40:14 CDT" name="setUpClass" finished-at="2024-03-13T20:40:14 CDT" duration-ms="330" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@69504ae9]]>
+                <![CDATA[org.testng.TestRunner@4470fbd6]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runner.TestRunner@131774fe]" started-at="2024-03-02T00:55:25 CST" name="tearDownClass" finished-at="2024-03-02T00:55:25 CST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.numpyninja.codecrafters.runner.TestRunner@65fb9ffc]" started-at="2024-03-13T20:40:14 CDT" name="tearDownClass" finished-at="2024-03-13T20:40:14 CDT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- Runner.TestRunner -->
+      </class> <!-- com.numpyninja.codecrafters.runner.TestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
