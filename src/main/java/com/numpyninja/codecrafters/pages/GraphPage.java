@@ -41,10 +41,12 @@ public class GraphPage {
 	
 	
 	public void clickOnGraphLink() {
+		addDelay();
 		driver.findElement(graphLink).click();
 	}
 	
 	public void clickOngraphrepresentationLink() {
+		addDelay();
 		driver.findElement(graphrepresentationLink).click();	
 	}
 	public WebElement getTryhere()
@@ -60,5 +62,14 @@ public void enterPythonCode(String filePath) throws InvalidFormatException, IOEx
 	TryEditor tryEditor=new TryEditor(driver);
 	Actions actions=new Actions(driver);
 	actions.sendKeys(tryEditor.getEditorTextBox(), readData).build().perform();
+}
+
+private void addDelay() {
+	try {
+		Thread.sleep(1000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
 }
 }

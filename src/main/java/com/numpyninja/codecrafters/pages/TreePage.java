@@ -34,83 +34,89 @@ public class TreePage {
 	}
 
 	public String getPageTitle() {
+		addDelay() ;
 		return driver.getTitle();
 	}
 
 	public void clickOnOverviewOfTreesLink() {
-
+		addDelay() ;
 		driver.findElement(overviewOfTreesLink).click();
 	}
 
 	public void clickOnTerminologiesLink() {
-
+		addDelay() ;;
 		driver.findElement(terminologiesLink).click();
 	}
 
 	public void clickOnTypesOfTreesLink() {
-
+		addDelay() ;;
 		driver.findElement(typesOfTreesLink).click();
 	}
 
 	public EditorPage navigateToEditorPage() {
+		addDelay() ;
 		driver.findElement(tryHereButton).click();
+		 
+		return new EditorPage(driver);
+	}
+
+	public void clickOnTreeTraversalsLink() {
+		 addDelay() ;
+		driver.findElement(treeTraversalsLink).click();
+	}
+
+	public void clickOnTraversalsIllustrationLink() {
+		 addDelay() ;
+		driver.findElement(traversalsIllustrationLink).click();
+	}
+
+	public void clickOnBinaryTreesLink() {
+		 addDelay() ;
+		driver.findElement(binaryTreesLink).click();
+	}
+
+	public void clickOnTypesOfBinaryTreesLink() {
+		 addDelay() ;
+		driver.findElement(typesOfBinaryTreesLink).click();
+	}
+
+	public void clickOnImplementationInPythonLink() {
+		 addDelay() ;
+		driver.findElement(implementationInPythonLink).click();
+	}
+
+	public void clickOnBinaryTreeTraversalsLink() {
+		 addDelay() ;
+		driver.findElement(binaryTreeTraversalsLink).click();
+	}
+
+	public void clickOnImplementationOfBinaryTreesLink() {
+		 addDelay() ;
+		driver.findElement(implementationOfBinaryTreesLink).click();
+	}
+
+	public void clickOnApplicationOfBinaryTreesLink() {
+		 addDelay() ;
+		driver.findElement(applicationsOfBinaryTreesLink).click();
+	}
+
+	public void clickOnBinarySearchTreesLink() {
+		 addDelay() ;
+		driver.findElement(binarySearchTreesLink).click();
+	}
+
+	public void clickOnImplementaionOfBSTLink() {
+		 addDelay() ;
+		driver.findElement(implementationOfBstLink).click();
+	}
+	
+	private void addDelay() {
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return new EditorPage(driver);
-	}
-
-	public void clickOnTreeTraversalsLink() {
-
-		driver.findElement(treeTraversalsLink).click();
-	}
-
-	public void clickOnTraversalsIllustrationLink() {
-
-		driver.findElement(traversalsIllustrationLink).click();
-	}
-
-	public void clickOnBinaryTreesLink() {
-
-		driver.findElement(binaryTreesLink).click();
-	}
-
-	public void clickOnTypesOfBinaryTreesLink() {
-
-		driver.findElement(typesOfBinaryTreesLink).click();
-	}
-
-	public void clickOnImplementationInPythonLink() {
-
-		driver.findElement(implementationInPythonLink).click();
-	}
-
-	public void clickOnBinaryTreeTraversalsLink() {
-
-		driver.findElement(binaryTreeTraversalsLink).click();
-	}
-
-	public void clickOnImplementationOfBinaryTreesLink() {
-
-		driver.findElement(implementationOfBinaryTreesLink).click();
-	}
-
-	public void clickOnApplicationOfBinaryTreesLink() {
-
-		driver.findElement(applicationsOfBinaryTreesLink).click();
-	}
-
-	public void clickOnBinarySearchTreesLink() {
-
-		driver.findElement(binarySearchTreesLink).click();
-	}
-
-	public void clickOnImplementaionOfBSTLink() {
-
-		driver.findElement(implementationOfBstLink).click();
 	}
 
 }

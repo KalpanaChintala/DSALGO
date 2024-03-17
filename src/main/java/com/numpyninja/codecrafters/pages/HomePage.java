@@ -72,53 +72,45 @@ public class HomePage {
 	String URL = "https://dsportalapp.herokuapp.com/";
 
 	public StaticWebPage clickOnLinkedListButton() {
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
-		//driver.findElement(By.xpath("//a[@href='linked-list']")).click();
+		addDelay();
 		getStartedLinkedlistButton.click();
 		return new StaticWebPage(driver);
 	}
 
 	public StaticWebPage clickOnStackButton() {
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
-		//driver.findElement(By.xpath("//a[@href='stack']")).click();
+		addDelay();
 		getStartedStackButton.click();
 		return new StaticWebPage(driver);
 	}
 
 	public QueuePage navigateToQueuePage() {
-
+		addDelay();
 		getStartedQueueButton.click();
+		addDelay();
 		return new QueuePage(driver);
 	}
 
 	public TreePage navigateToTreePage() {
-
+		addDelay();
 		getStartedTreeButton.click();
+		addDelay();
 		return new TreePage(driver);
 	}
 	
 	public ArrayPage navigateToArrayPage()
 	{
+		addDelay();
 		dataStructuredropdown.click();
+		addDelay();
 		Arraysoptions.click();
 		return new ArrayPage(driver);
 	}
 	
 	public GraphPage navigateToGraphPage()
 	{
+		addDelay();
 		dataStructuredropdown.click();
+		addDelay();
 		Graphoptions.click();
 		return new GraphPage(driver);
 	}
@@ -126,30 +118,31 @@ public class HomePage {
 	public void getStartedForModules(String string) {
 		switch (string) {
 		case "Datastructures":
+			addDelay();
 			getStartedDSIntroductionButton.click();
 			break;
 		case "Arrays":
-
+			addDelay();
 			getStartedArrayButton.click();
 			break;
 		case "Linkedlist":
-
+			addDelay();
 			getStartedLinkedlistButton.click();
 			break;
 		case "Stack":
-
+			addDelay();
 			getStartedStackButton.click();
 			break;
 		case "Queue":
-
+			addDelay();
 			getStartedQueueButton.click();
 			break;
 		case "Tree":
-
+			addDelay();
 			getStartedTreeButton.click();
 			break;
 		case "Graph":
-
+			addDelay();
 			getStartedGraphButton.click();
 			break;
 		}
@@ -165,33 +158,39 @@ public class HomePage {
 
 	// dropdown options
 	public void clickOnDropdown(String string) {
-
+		addDelay();
 		dropdown_DS.click();
+		
 		switch (string) {
 
 		case "Arrays":
+			addDelay();
 			dropdown_array.click();
 			break;
 
 		case "Linkedlist":
-
+			addDelay();
 			dropdown_linkedlist.click();
 
 			break;
 
 		case "Stack":
+			addDelay();
 			dropdown_stack.click();
 			break;
 
 		case "Queue":
+			addDelay();
 			dropdown_queue.click();
 			break;
 
 		case "Tree":
+			addDelay();
 			dropdown_tree.click();
 			break;
 
 		case "Graph":
+			addDelay();
 			dropdown_graph.click();
 			break;
 		}
@@ -199,6 +198,7 @@ public class HomePage {
 	}
 
 	public void click_register() {
+		addDelay();
 		register.click();
 	}
 
@@ -209,19 +209,32 @@ public class HomePage {
 	}
 
 	public void clickOnSignIn() {
+		addDelay();
 		login.click();
 	}
 
 	public boolean displaySiginLink() {
+		addDelay();
 		return (login.isDisplayed());
 	}
 
 	public boolean displayRegisterLink() {
+		addDelay();
 		return (register.isDisplayed());
 
 	}
 	public DSintroPage navigateTodataintroductionPage() {
+		addDelay();
 		getStartedDSIntroductionButton.click();
 		return new DSintroPage(driver);
+	}
+	
+	private void addDelay() {
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }

@@ -40,17 +40,18 @@ public class EditorPageSteps {
 	@When("User enters valid python code in Editor from sheet {string} and {int}")
 	public void user_enters_valid_python_code_in_editor_from_sheet_and(String sheetName, Integer rowNum) throws InvalidFormatException, IOException {
 		System.out.println("Sheet name "+sheetName);
-		ConfigReader configReader = new ConfigReader();
-		Properties prop = configReader.init_prop();
+		//ConfigReader configReader = new ConfigReader();
+	//	Properties prop = configReader.init_prop();
 		//Reading the code from the excel sheet named Success and storing to variables code and result
 		ExcelReader reader = new ExcelReader();
 		//each row corresponds to a list(testData) and for each row there are a key-value pairs
 		
-		String filePath=prop.getProperty("pythonexcelfilepath");
+		//String filePath=prop.getProperty("pythonexcelfilepath");
 		
-		System.out.println("Excel sheet path is: "+ filePath);
-		List<Map<String,String>> testData = reader.getData(filePath, sheetName);
+		//System.out.println("Excel sheet path is: "+ filePath);
 		
+		List<Map<String,String>> testData = reader.getData("./src/test/resources/Exceldata/PythonTestData.xlsx", sheetName);
+
 		String code = testData.get(rowNum).get("pythonCode");
 		result = testData.get(rowNum).get("result");
 		

@@ -34,6 +34,7 @@ public class SigninPage {
 
 		for (Map<String, String> detail : userName) {
 			String uName = detail.get("username");
+			addDelay();
 			driver.findElement(UserName).sendKeys(uName);
 		}
 

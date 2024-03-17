@@ -31,6 +31,12 @@ public class EditorPage {
 	}
 
 	public void enterCodeToEditor(String code) {
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		WebElement  tryEditorInputElement= driver.findElement(tryEditorInput);
 		
 		new Actions(driver)
@@ -69,19 +75,23 @@ for (String line : lines) {
 	
 	}
 	public void clickOnRunButton() {
+		addDelay();
+		driver.findElement(runButton).click();
+	}
+
+	public String verifyOutputInEditor() {
+		addDelay();
+		String actualOutput = driver.findElement(tryEditorOutput).getText();
+		return actualOutput;
+	}
+
+	private void addDelay() {
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		driver.findElement(runButton).click();
-	}
-
-	public String verifyOutputInEditor() {
-
-		String actualOutput = driver.findElement(tryEditorOutput).getText();
-		return actualOutput;
 	}
 
 }
