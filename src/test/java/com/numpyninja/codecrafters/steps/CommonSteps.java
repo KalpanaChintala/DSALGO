@@ -10,6 +10,8 @@ import com.numpyninja.codecrafters.pages.SigninPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import lombok.extern.slf4j.Slf4j;
+
 
 public class CommonSteps {
 	
@@ -22,6 +24,7 @@ public class CommonSteps {
 	public void user_has_already_logged_in_to_application_with_username_and_password(String userName, String password) {
 		DriverFactory.getDriver().get("https://dsportalapp.herokuapp.com/login");
 		homePage = signInPage.doLogin(userName, password);
+		LoggerLoad.info("User logged-in successfully.");
 	}
 
 	@Given("User is on the LinkedList page after loggedin")

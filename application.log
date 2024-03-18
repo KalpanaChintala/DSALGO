@@ -1,0 +1,236 @@
+2024-03-17 12:52:03,737  INFO [main] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 12:52:03,765  INFO [main] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 12:54:59,595  INFO [main] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 12:54:59,623  INFO [main] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 12:55:10,858  INFO [main] LoggerLoad:12 - Info: User logged-in successfully.
+2024-03-17 12:55:28,371  INFO [main] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 12:55:28,380  INFO [main] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 12:55:38,855  INFO [main] LoggerLoad:12 - Info: User logged-in successfully.
+2024-03-17 12:57:08,258  INFO [main] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 12:57:08,265  INFO [main] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 12:57:18,983  INFO [main] LoggerLoad:12 - Info: User logged-in successfully.
+2024-03-17 12:57:28,445  INFO [main] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 12:57:28,453  INFO [main] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 12:57:44,142  INFO [main] LoggerLoad:12 - Info: User logged-in successfully.
+2024-03-17 13:27:56,654  INFO [main] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 13:27:56,686  INFO [main] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 13:28:08,646  INFO [main] LoggerLoad:12 - Info: User logged-in successfully.
+2024-03-17 13:28:18,785  INFO [main] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 13:28:18,793  INFO [main] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 13:28:29,237  INFO [main] LoggerLoad:12 - Info: User logged-in successfully.
+2024-03-17 13:28:38,969  INFO [main] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 13:28:38,977  INFO [main] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 13:28:49,342  INFO [main] LoggerLoad:12 - Info: User logged-in successfully.
+2024-03-17 13:29:00,345  INFO [main] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 13:29:00,355  INFO [main] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 13:29:10,829  INFO [main] LoggerLoad:12 - Info: User logged-in successfully.
+2024-03-17 13:29:19,968  INFO [main] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 13:29:19,973  INFO [main] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:19:30,181  INFO [main] Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-03-17 19:19:30,195  INFO [main] Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 3 ms.
+2024-03-17 19:19:30,197  INFO [main] Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-03-17 19:19:30,198  INFO [main] Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-03-17 19:19:30,199  INFO [main] Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-03-17 19:19:30,200  INFO [main] Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-03-17 19:19:30,203  INFO [main] Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-03-17 19:19:30,204  INFO [main] Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-03-17 19:19:30,205  INFO [main] Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-03-17 19:19:30,222  INFO [main] Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 15 ms.
+2024-03-17 19:19:30,229  INFO [main] Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-03-17 19:19:30,233  INFO [main] Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 3 ms.
+2024-03-17 19:19:30,239  INFO [main] Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-03-17 19:19:30,239  INFO [main] Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-03-17 19:19:30,240  INFO [main] Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-03-17 19:19:30,241  INFO [main] Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-03-17 19:19:30,252  INFO [main] Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-03-17 19:19:30,252  INFO [main] Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-03-17 19:19:30,252  INFO [main] Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-03-17 19:19:30,252  INFO [main] Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-03-17 19:19:30,254  INFO [main] Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-03-17 19:19:30,255  INFO [main] Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-03-17 19:19:30,256  INFO [main] Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-03-17 19:19:30,256  INFO [main] Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-03-17 19:19:30,262  INFO [main] Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 4 ms.
+2024-03-17 19:19:30,264  INFO [main] Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2024-03-17 19:19:30,265  INFO [main] Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-03-17 19:19:30,265  INFO [main] Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-03-17 19:19:30,265  INFO [main] Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-03-17 19:19:30,266  INFO [main] Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-03-17 19:19:30,271  INFO [main] Utils:112 - [TestNG] Running:
+  /private/var/folders/31/yj9cjf6s3l99czmz5dcs81l00000gn/T/testng-eclipse--105288495/testng-customsuite.xml
+
+2024-03-17 19:19:30,305  INFO [main] Utils:112 - [Utils] DynamicGraphHelper.createDynamicGraph() took 4 ms.
+2024-03-17 19:19:35,132  INFO [TestNG-PoolService-5] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:19:35,145  INFO [TestNG-PoolService-0] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:19:35,144  INFO [TestNG-PoolService-6] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:19:35,144  INFO [TestNG-PoolService-9] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:19:35,137  INFO [TestNG-PoolService-4] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:19:35,133  INFO [TestNG-PoolService-8] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:19:35,132  INFO [TestNG-PoolService-2] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:19:35,132  INFO [TestNG-PoolService-1] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:19:35,150  INFO [TestNG-PoolService-3] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:19:35,145  INFO [TestNG-PoolService-7] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:19:35,205  INFO [TestNG-PoolService-6] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:19:35,210  INFO [TestNG-PoolService-1] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:19:35,210  INFO [TestNG-PoolService-7] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:19:35,209  INFO [TestNG-PoolService-8] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:19:35,209  INFO [TestNG-PoolService-0] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:19:35,209  INFO [TestNG-PoolService-5] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:19:35,208  INFO [TestNG-PoolService-9] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:19:35,207  INFO [TestNG-PoolService-3] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:19:35,211  INFO [TestNG-PoolService-2] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:19:35,211  INFO [TestNG-PoolService-4] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:20:19,420  WARN [AsyncHttpClient-1-9] WebSocketHandler:142 - onError
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-03-17 19:20:20,253  INFO [TestNG-PoolService-5] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:20:20,256  INFO [TestNG-PoolService-9] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:20:20,307  INFO [TestNG-PoolService-6] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:20:20,594  INFO [TestNG-PoolService-5] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:20:20,657  INFO [TestNG-PoolService-6] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:20:20,805  INFO [TestNG-PoolService-9] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:20:21,707  INFO [TestNG-PoolService-8] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:20:21,819  INFO [TestNG-PoolService-8] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:20:21,864  INFO [TestNG-PoolService-1] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:20:21,893  INFO [TestNG-PoolService-2] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:20:21,969  INFO [TestNG-PoolService-3] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:20:21,987  INFO [TestNG-PoolService-1] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:20:21,988  INFO [TestNG-PoolService-2] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:20:22,007  INFO [TestNG-PoolService-3] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:20:22,021  INFO [TestNG-PoolService-4] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:20:22,040  INFO [TestNG-PoolService-4] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:20:50,876  INFO [TestNG-PoolService-7] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:20:50,892  INFO [TestNG-PoolService-7] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:20:50,917  INFO [TestNG-PoolService-0] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:20:50,932  INFO [TestNG-PoolService-0] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:20:50,947  INFO [TestNG-PoolService-5] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:20:50,958  INFO [TestNG-PoolService-5] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:20:50,988  INFO [TestNG-PoolService-1] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:20:50,988  INFO [TestNG-PoolService-6] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:20:50,996  INFO [TestNG-PoolService-6] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:20:51,007  INFO [TestNG-PoolService-1] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:20:51,170  INFO [TestNG-PoolService-2] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:20:51,172  INFO [TestNG-PoolService-9] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:20:51,181  INFO [TestNG-PoolService-8] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:20:51,181  INFO [TestNG-PoolService-2] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:20:51,182  INFO [TestNG-PoolService-3] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:20:51,185  INFO [TestNG-PoolService-9] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:20:51,186  INFO [TestNG-PoolService-3] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:20:51,191  INFO [TestNG-PoolService-8] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:20:51,212  INFO [TestNG-PoolService-4] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:20:51,220  INFO [TestNG-PoolService-4] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:21:20,258  INFO [TestNG-PoolService-9] LoggerLoad:12 - Info: User logged-in successfully.
+2024-03-17 19:21:20,334  INFO [TestNG-PoolService-4] LoggerLoad:12 - Info: User logged-in successfully.
+2024-03-17 19:21:25,298  INFO [TestNG-PoolService-8] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:21:25,315  INFO [TestNG-PoolService-8] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:21:25,416  INFO [TestNG-PoolService-7] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:21:25,417  INFO [TestNG-PoolService-1] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:21:25,416  INFO [TestNG-PoolService-5] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:21:25,417  INFO [TestNG-PoolService-2] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:21:25,431  INFO [TestNG-PoolService-1] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:21:25,433  INFO [TestNG-PoolService-5] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:21:25,433  INFO [TestNG-PoolService-7] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:21:25,434  INFO [TestNG-PoolService-2] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:21:25,439  INFO [TestNG-PoolService-6] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:21:25,439  INFO [TestNG-PoolService-3] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:21:25,439  INFO [TestNG-PoolService-0] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:21:25,449  INFO [TestNG-PoolService-0] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:21:25,452  INFO [TestNG-PoolService-6] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:21:25,450  INFO [TestNG-PoolService-3] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:21:46,053  WARN [AsyncHttpClient-1-11] WebSocketHandler:142 - onError
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-03-17 19:21:54,118  INFO [TestNG-PoolService-3] LoggerLoad:12 - Info: User logged-in successfully.
+2024-03-17 19:21:55,279  INFO [TestNG-PoolService-8] LoggerLoad:12 - Info: User logged-in successfully.
+2024-03-17 19:21:55,275  INFO [TestNG-PoolService-6] LoggerLoad:12 - Info: User logged-in successfully.
+2024-03-17 19:21:55,235  INFO [TestNG-PoolService-1] LoggerLoad:12 - Info: User logged-in successfully.
+2024-03-17 19:21:55,503  INFO [TestNG-PoolService-2] LoggerLoad:12 - Info: User logged-in successfully.
+2024-03-17 19:22:06,642  INFO [TestNG-PoolService-9] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:22:06,675  INFO [TestNG-PoolService-9] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:22:06,849  INFO [TestNG-PoolService-4] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:22:06,888  INFO [TestNG-PoolService-4] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:22:10,011  INFO [TestNG-PoolService-7] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:22:10,039  INFO [TestNG-PoolService-5] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:22:10,065  INFO [TestNG-PoolService-7] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:22:10,148  INFO [TestNG-PoolService-5] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:22:10,758  INFO [TestNG-PoolService-0] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:22:10,772  INFO [TestNG-PoolService-0] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:22:11,766  INFO [TestNG-PoolService-8] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:22:11,780  INFO [TestNG-PoolService-8] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:22:22,421  INFO [TestNG-PoolService-3] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:22:22,690  INFO [TestNG-PoolService-3] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:22:23,256  INFO [TestNG-PoolService-1] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:22:23,691  INFO [TestNG-PoolService-1] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:22:24,440  INFO [TestNG-PoolService-2] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:22:24,603  INFO [TestNG-PoolService-2] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:22:26,220  INFO [TestNG-PoolService-8] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:22:26,239  INFO [TestNG-PoolService-8] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:22:26,254  INFO [TestNG-PoolService-0] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:22:26,265  INFO [TestNG-PoolService-0] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:22:26,287  INFO [TestNG-PoolService-5] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:22:26,297  INFO [TestNG-PoolService-5] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:22:26,344  INFO [TestNG-PoolService-7] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:22:26,351  INFO [TestNG-PoolService-7] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:22:28,673  INFO [TestNG-PoolService-6] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:22:28,677  INFO [TestNG-PoolService-6] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:22:48,607  INFO [TestNG-PoolService-1] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:22:48,624  INFO [TestNG-PoolService-1] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:22:48,637  INFO [TestNG-PoolService-4] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:22:48,641  INFO [TestNG-PoolService-9] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:22:48,644  INFO [TestNG-PoolService-3] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:22:48,644  INFO [TestNG-PoolService-4] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:22:48,647  INFO [TestNG-PoolService-9] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:22:48,656  INFO [TestNG-PoolService-3] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:22:49,319  INFO [TestNG-PoolService-2] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:22:49,336  INFO [TestNG-PoolService-2] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:22:51,489  INFO [TestNG-PoolService-8] LoggerLoad:12 - Info: User logged-in successfully.
+2024-03-17 19:22:53,184  INFO [TestNG-PoolService-7] LoggerLoad:12 - Info: User logged-in successfully.
+2024-03-17 19:22:54,626  INFO [TestNG-PoolService-5] LoggerLoad:12 - Info: User logged-in successfully.
+2024-03-17 19:22:55,672  INFO [TestNG-PoolService-0] LoggerLoad:12 - Info: User logged-in successfully.
+2024-03-17 19:23:16,169  INFO [TestNG-PoolService-6] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:23:16,245  INFO [TestNG-PoolService-6] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:23:30,747  INFO [TestNG-PoolService-0] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:23:30,784  INFO [TestNG-PoolService-5] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:23:30,801  INFO [TestNG-PoolService-8] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:23:30,838  INFO [TestNG-PoolService-5] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:23:30,852  INFO [TestNG-PoolService-8] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:23:30,962  INFO [TestNG-PoolService-0] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:23:30,983  INFO [TestNG-PoolService-7] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:23:31,024  INFO [TestNG-PoolService-7] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:23:31,656  INFO [TestNG-PoolService-1] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:23:31,764  INFO [TestNG-PoolService-1] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:23:33,819  INFO [TestNG-PoolService-3] WebDriverManager:1217 - Using chromedriver 122.0.6261.128 (resolved driver for Chrome 122)
+2024-03-17 19:23:33,831  INFO [TestNG-PoolService-3] WebDriverManager:1270 - Exporting webdriver.chrome.driver as /Users/vinu/.cache/selenium/chromedriver/mac64/122.0.6261.128/chromedriver
+2024-03-17 19:24:30,979  INFO [main] Utils:112 - [TestNG] Time taken by org.testng.internal.ExitCodeListener@216f01: 0 ms
+2024-03-17 19:24:31,017  INFO [main] Utils:112 - [TestNG] Time taken by org.testng.reporters.SuiteHTMLReporter@aa752bb: 34 ms
+2024-03-17 19:24:31,109  INFO [main] Utils:112 - [TestNG] Time taken by org.testng.reporters.jq.Main@5b332439: 91 ms
+2024-03-17 19:24:31,125  INFO [main] Utils:112 - [TestNG] Time taken by org.testng.reporters.FailedReporter@6e8f2094: 15 ms
+2024-03-17 19:24:31,158  INFO [main] Utils:112 - [TestNG] Time taken by org.testng.reporters.XMLReporter@582dcd35: 33 ms
+2024-03-17 19:24:31,173  INFO [main] Utils:112 - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@675ec28b: 15 ms
+2024-03-17 19:24:31,191  INFO [main] Utils:112 - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@16a6dc21: 18 ms
