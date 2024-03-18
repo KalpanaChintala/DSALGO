@@ -5,9 +5,14 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class ConfigReader {
 
 	private Properties prop;
+	
+	private static Logger logger = LogManager.getLogger();
 
 	/**
 	 * This method is used to load the properties from config.properties file
@@ -22,9 +27,9 @@ public class ConfigReader {
 			prop.load(ip);
 
 		} catch (FileNotFoundException e) {
-			e.printStackTrace();
+			logger.error("Error while reading file ", e);
 		} catch (IOException e) {
-			e.printStackTrace();
+			logger.error("IOException while reading file ", e);
 		}
 
 		return prop; // entire ket, values pairs(as object) is read from property file and returned

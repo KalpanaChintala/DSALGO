@@ -19,7 +19,6 @@ Feature: Homepage features of the DSAlgoApplication
     Given User is on the Home page
     When User clicks on DatastructuresDropdown "<option>"
     Then User gets warning message "You are not logged in"
-
     Examples: 
       | option     |
       | Arrays     |

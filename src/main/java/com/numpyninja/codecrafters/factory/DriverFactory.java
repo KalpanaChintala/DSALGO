@@ -1,5 +1,9 @@
 package com.numpyninja.codecrafters.factory;
 
+
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -11,7 +15,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class DriverFactory {
 
 	public WebDriver driver;
-
+	private static Logger logger = LogManager.getLogger();
 	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
 
 	/**
@@ -23,7 +27,7 @@ public class DriverFactory {
 	 */
 	public WebDriver init_driver(String browser) {  //fn call in appln hooks
 
-		//System.out.println("browser value is: " + browser);
+		logger.info("browser value is: " + browser);
 
 		if (browser.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();

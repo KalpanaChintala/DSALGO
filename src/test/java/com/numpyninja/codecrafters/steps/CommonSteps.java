@@ -5,7 +5,9 @@ import org.testng.Assert;
 import com.numpyninja.codecrafters.factory.DriverFactory;
 import com.numpyninja.codecrafters.pages.HomePage;
 import com.numpyninja.codecrafters.pages.StaticWebPage;
+import com.numpyninja.codecrafters.util.LoggerLoad;
 import com.numpyninja.codecrafters.pages.SigninPage;
+
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -22,6 +24,7 @@ public class CommonSteps {
 	public void user_has_already_logged_in_to_application_with_username_and_password(String userName, String password) {
 		DriverFactory.getDriver().get("https://dsportalapp.herokuapp.com/login");
 		homePage = signInPage.doLogin(userName, password);
+		LoggerLoad.info("User logged-in successfully.");
 	}
 
 	@Given("User is on the LinkedList page after loggedin")

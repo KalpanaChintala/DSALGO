@@ -24,7 +24,7 @@ public class SigninPage {
 		driver.findElement(UserName).sendKeys(username);
 		addDelay();
 		driver.findElement(Password).sendKeys(password);
-		addDelay();
+		
 		driver.findElement(LoginButton).click();
 		return new HomePage(driver);// returns the next page
 	}

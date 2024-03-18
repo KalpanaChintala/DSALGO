@@ -26,17 +26,13 @@ public class EditorPage {
 	}
 
 	public String getPageTitle() {
+		addDelay();
 		return driver.getTitle();
 
 	}
 
 	public void enterCodeToEditor(String code) {
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		addDelay();
 		WebElement  tryEditorInputElement= driver.findElement(tryEditorInput);
 		
 		new Actions(driver)
@@ -75,12 +71,11 @@ for (String line : lines) {
 	
 	}
 	public void clickOnRunButton() {
-		addDelay();
 		driver.findElement(runButton).click();
 	}
 
 	public String verifyOutputInEditor() {
-		addDelay();
+		
 		String actualOutput = driver.findElement(tryEditorOutput).getText();
 		return actualOutput;
 	}
